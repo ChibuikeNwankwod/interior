@@ -10,21 +10,21 @@ main {
   padding: 2% 20px;
   flex-direction: column;
 }
+.show-menu {
+  right: 0;
+}
 
 .sub-lay {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* height: 100px; */
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
   text-align: center;
   color: #000;
-}
-.show-menu {
-  right: 0;
 }
 
 #caption {
@@ -38,7 +38,7 @@ main {
 }
 #image-lay {
   width: 100%;
-  /* height: 300px; */
+
   object-fit: contain;
   padding-top: 30px;
 }
@@ -66,52 +66,42 @@ main {
   background-color: #131314d5;
 }
 
-.bottom-abb-cont {
-  padding-top: 20px;
-  gap: 20px;
-  /* width: 300px; */
-  /* height: 300px; */
+.title {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 170%;
+  font-weight: 600;
+}
+
+.text-33 {
   display: flex;
-}
+  flex-direction: column;
 
-#image-abb-2 {
-  width: 60vw;
-  /* height: 525px; */
-  /* object-fit: contain; */
-}
-
-.image-sub {
-  background: #2c3878;
-  /* width: 120px; */
-}
-
-p {
-  font-size: 15px;
-  color: #fff;
-  width: 40px;
-  left: 0.5rem;
-  position: relative;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  padding-top: 10px;
+  color: #9c9c9c;
+}
+.bottom-abb-cont {
+  padding-top: 20px;
+  gap: 20px;
+  display: grid;
+}
+.top-images {
+  display: flex;
+  gap: 10px;
+}
+.btm-images {
+  display: flex;
+  gap: 10px;
 }
 
-#first,
-#second,
-#third {
-  font-size: 10px;
-  color: #fff;
-  /* width: 110px; */
-  padding: 1% 4px 10px;
-  text-align: center;
-  font-weight: 400;
-  line-height: 160%;
+.image-abb-2 {
+  width: 80px;
 }
 .bottom-abb-cont-2 {
-  /* width: 300px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 10px; */
   font-size: 18px;
   color: #333;
   font-weight: 600;
@@ -128,7 +118,7 @@ p {
 }
 .last-abb-cont {
   padding-top: 40px;
-  /* width: 300px; */
+
   background: #fff;
   display: flex;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
@@ -155,13 +145,12 @@ p {
   font-weight: 600;
   line-height: 140%;
   padding-top: 20px;
-  /* text-align: center; */
 }
 #text-btm-abb {
   padding-top: 20px;
-  /* width: 200px; */
+
   color: #9c9c9c;
-  /* text-align: center; */
+
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -183,6 +172,33 @@ p {
     width: 700px;
     align-items: center;
   }
+  .text-33 {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    font-size: 24px;
+  }
+  .bottom-layout-one {
+    width: 700px;
+  }
+  .bottom-abb-cont {
+    padding-top: 40px;
+    gap: 20px;
+    display: grid;
+
+    width: 600px;
+  }
+  .btm-images {
+    display: flex;
+    gap: 10px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .image-abb-2 {
+    width: 170px;
+  }
   .svc-word {
     width: 500px;
     font-size: 24px;
@@ -203,26 +219,15 @@ p {
   .bottom-abb-cont {
     width: 700px;
   }
-  p {
-    font-size: 36px;
-    color: #fff;
-    width: 40px;
-    left: 2rem;
-  }
-  #first,
-  #second,
-  #third {
-    font-size: 18px;
-    color: #fff;
-    /* width: 110px; */
-    padding: 5% 25px 17px;
-  }
   .bottom-abb-cont-2 {
     width: 700px;
     font-size: 36px;
   }
   #word-abb-2 {
     font-size: 24px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
   }
   .last-abb-cont {
     text-align: center;
@@ -256,11 +261,16 @@ p {
   .line {
     width: 464px;
   }
+  .bottom-layout-one {
+    width: 1200px;
+  }
 
   .bottom-abb-cont {
-    gap: 40px;
     width: 1200px;
-    display: flex;
+    display: grid;
+  }
+  .image-abb-2 {
+    width: 282px;
   }
   #word-s {
     display: flex;
@@ -269,13 +279,11 @@ p {
     font-style: normal;
     font-weight: 600;
     line-height: 170%;
-    /* margin-top: 24px; */
   }
 
   #image-abb-2 {
     width: 80vw;
     height: 525px;
-    /* object-fit: contain; */
   }
 
   .image-sub {
@@ -283,24 +291,6 @@ p {
 
     height: 525px;
     background: #2c3878;
-  }
-
-  p {
-    font-size: 52px;
-    width: 132px;
-    /* text-align: center; */
-    left: 1.5rem;
-    position: relative;
-  }
-
-  #first,
-  #second,
-  #third {
-    font-size: 18px;
-    text-align: center;
-    /* left: 1.5rem; */
-    position: relative;
-    padding: 2% 5px 4rem;
   }
   #caption {
     font-size: 36px;
@@ -315,9 +305,9 @@ p {
   #word-abb-2 {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    /* height: 87px; */
-    width: 369px;
+    font-size: 24px;
+
+    width: 500px;
     padding-bottom: 40px;
   }
   .last-img {

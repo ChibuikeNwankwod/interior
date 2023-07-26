@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <link rel="stylesheet" href="./service.css">
+    <title>Services</title> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./service.css">
 </head>
 <body>
     <header>
         <img src="./assets/Dananz.jpg" class="logo" alt="" />
         <nav>
-            <div id="menu-icon"><span></span><span></span><span></span></div>
+            <div class="menu-icon"><span></span><span></span><span></span></div>
+
+            
           <ul class="menu-content">
             <li>
               <a class="links" href="./index.html">Home</a>
@@ -26,11 +30,11 @@
               <span class="focus"></span>
             </li>
             <li>
-              <a class="links" href="#">our teams</a>
+              <a class="links" href="./ourTeam.html">our teams</a>
   
               <span class="focus"></span>
             </li>
-            <a class="links" href="#">contact us</a>
+            <a class="links" href="./contact.html">contact us</a>
   
               <span class="focus"></span>
             </li>
@@ -52,13 +56,15 @@
               <span class="focus"></span>
             </li>
             <li>
-              <a class="links" href="#">our teams</a>
+              <a class="links" href="./ourTeam.html">our teams</a>
   
               <span class="focus"></span>
             </li>
-            <a class="links" href="#">contact us</a>
-  
-              <span class="focus"></span>
+            <a class="links" href="./contact.html">contact us</a>
+
+            <span class="focus"></span>
+            
+            <li id="close-menu">x</li>
             </li>
           </ul>
         </nav>
@@ -84,7 +90,7 @@
           </div>
 
           <div class="about-section">
-            <div class="svc-abb-1">
+            <div class="svc-abb-1" id="interior">
                 <div class="about-images">
                     <img src="./assets/service/service-1.jpg" alt="" id="image-about"">
      
@@ -93,20 +99,20 @@
                       </div>
             </div>
 
-                 <div class="svc-abb-1">
+                 <div class="svc-abb-1" id="consultant">
                     <div class="about-images">
-                        <img src="./assets/service/service-2.jpg" alt="" id="image-about"">
+                        <img src="./assets/service/service-2.jpg" alt="" id="image-about">
          
                      </div>
                       <div class="about-text"><span id="cap-s">Consultant</span><br>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations. <br><br>
                           </div>
                  </div>
 
-                     <div class="svc-abb-1"> <div class="about-images">
-                        <img src="./assets/service/service-3.jpg" alt="" id="image-about"">
+                     <div class="svc-abb-1" id="construction"> <div class="about-images">
+                        <img src="./assets/service/service-3.jpg" alt="" id="image-about">
          
                      </div>
-                      <div class="about-text"><span id="cap-s">construction consultant</span><br>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations. <br><br>
+                      <div class="about-text" ><span id="cap-s">construction consultant</span><br>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations. <br><br>
                           </div></div>
          </div>
 
@@ -127,25 +133,25 @@
             </div>
     
             <div class="text-34">
-              <div class="first-product">01<div class="title-1">Vintage <br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="#"
+              <div class="first-product">01<div class="title-1">Vintage <br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="./portfolio.html#vintage"
                 >&#8594;</a
               ></div>
             
             </div>
     
-            <div class="first-product">02<div class="title-1">Minimalist<br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="#"
+            <div class="first-product">02<div class="title-1">Minimalist<br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="./portfolio.html#minimalist"
               >&#8594;</a
             ></div>
           
           </div>
     
-          <div class="first-product">03<div class="title-1">Modern <br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="#"
+          <div class="first-product">03<div class="title-1">Modern <br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="./portfolio.html#modern"
             >&#8594;</a
           ></div>
         
         </div>
     
-        <div class="first-product">03<div class="title-1">transitional<br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="#"
+        <div class="first-product">03<div class="title-1">transitional<br> <span id="word-1">the use of simple and limited elements to get the best effect or impression.</span></div> <div class="arrow-1"><a class="link-3" href="./portfolio.html#transitional"
           >&#8594;</a
         ></div>
       
@@ -163,7 +169,7 @@
             <div class="text-foot-left">
               Contact us below to work together to build your amazing interiors<a
                 class="button-f"
-                href="#"
+                href="./contact.html"
                 >Contact Us</a
               >
               <span class="focus"></span>
@@ -192,14 +198,17 @@
               <div class="socials">
                 Follow us On</h4>
                 <div class="social-images">
-                 <a href=""><img src="./assets/facebook.jpg" alt=""></a>
-                 <a href=""><img src="./assets/instagram.jpg" alt=""></a>
-                 <a href=""><img src="./assets/tiktok.jpg" alt=""></a>
-                 <a href=""><img src="./assets/youtube.jpg" alt=""></a>
+                 <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.jpg" alt=""></a>
+                 <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram.jpg" alt=""></a>
+                 <a href="https://www.tiktok.com" target="_blank"><img src="./assets/tiktok.jpg" alt=""></a>
+                 <a href="https://www.youtube.com" target="_blank"><img src="./assets/youtube.jpg" alt=""></a>
                 </div>
               </div>
             </div>
           </div>
     </footer>
+
+    <script src="./index.js"></script>
+
 </body>
 </html>
