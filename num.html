@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="build/css/intlTelInput.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body><h1>Phone Number With Country Code</h1>
+
+    <form>
+    
+    <input id="phon" name="phone" type="tel">
+    
+    <button type="submit">Submit</button>
+    
+    </form>
+
+    <script src="build/js/intlTelInput.js"></script>
+    
+</body>
+</html>
+<!DOCTYPE html>
+
+
+
+
+<body>
+
+<h1>Phone Number With Country Code</h1>
+
+<form>
+
+<input id="phone" name="phone" type="tel">
+
+<button type="submit">Submit</button>
+
+</form>
+
+<script src="build/js/intlTelInput.js"></script>
+
+<script>
+
+// Vanilla Javascript
+
+var input = document.querySelector("#phone");
+
+window.intlTelInput(input,({
+
+// options here
+
+}));
+
+$(document).ready(function() {
+
+$(".iti__flag-container").click(function() {
+
+var countryCode = $(".iti__selected-flag").attr("title");
+
+var countryCode = countryCode.replace(/[⁰-9]/g,"")
+
+$("#phone").val("");
+
+$("#phone").val("+"+countryCode+" "+ $("#phone").val());
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>

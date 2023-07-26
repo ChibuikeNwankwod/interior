@@ -450,11 +450,11 @@ form {
   }
   .first-cc {
     display: flex;
-    gap: 140px;
+    /* gap: 140px; */
   }
   .last-c {
     display: flex;
-    gap: 140px;
+    /* gap: 140px; */
   }
 
   #text-btm-abb {
@@ -465,7 +465,7 @@ form {
   .text-1 {
     width: 233px;
     height: 29px;
-    right: 10rem;
+    left: -16rem;
     position: relative;
   }
   .cont-last {
